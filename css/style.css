@@ -1,0 +1,157 @@
+.card-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.card {
+  width: 300px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: 0 0px 30px gray;
+  margin-bottom: 25px;
+}
+
+p,
+span,
+h2 {
+  user-select: none;
+}
+
+.cart-item {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+}
+
+.card-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.and {
+  padding: 0 5px;
+}
+
+.item-control {
+  display: flex;
+}
+
+.item-title {
+  text-align: center;
+}
+
+.item-control {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.item-counter,
+.no-item-text {
+  font-weight: bold;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.decrease,
+.increase {
+  width: 20px;
+  height: 20px;
+  border: none;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.increase {
+  background-color: green;
+  background-image: url("../svg/plus-icon.svg");
+}
+
+.decrease {
+  background-color: red;
+  background-image: url("../svg/minus-icon.svg");
+}
+
+.modal-text {
+  padding: 20px;
+  width: 400px;
+  position: fixed;
+  top: 30%;
+  right: 36%;
+  border-radius: 5px;
+  max-height: 400px;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  display: none;
+  transition: all 0.3 ease-in;
+  overflow-y: scroll;
+}
+
+.total-price {
+  display: block;
+  margin: 10px 0;
+}
+
+img {
+  max-width: 300px;
+  border-radius: 20px 20px 0 0;
+}
+
+.modal-btn,
+.addToCart-btn {
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  right: 8px;
+  top: 5px;
+}
+.modal-btn:hover,
+.decrease:hover,
+.increase:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s;
+}
+
+.addToCart-btn {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.addToCart-btn:hover {
+  background-color: rgb(2, 99, 2);
+  transition: all 0.3s;
+}
+
+.price {
+  padding-bottom: 5px;
+}
